@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/robot.css">
+    <title>Hydra Team</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Hydra Lybotics Team</h1>
+    </header>
+    <nav>
+        <a href="robot.html">Home</a>
+        <a href="members.html">Members</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="contactus.html">Contact Us</a>
+    </nav>
+    <section class="achievements">
+        <h2>Our Achievements</h2>
+        <div class="achievement-text">
+            <p>1. Participated in the robotics contest held in Benghazi and finished 4th.</p>
+            <p>2. Volunteered in the computer day fair in the IT faculty of Tripoli's University.</p>
+            <p>3. Took part in the robotics contest held by AMLY and nearly finished in 3rd place but settled for 5th.</p>
+            <p>4. The Greek Embassy invited our team.</p>
+            <p>5. Aided CyberKnights team from the TLC school.</p>
+            <p>6. Online meeting with the ExoKnights team from Texas.</p>
+            <p>7. Met and helped Beyonders team from Benghazi .</p>
+            <p>8. Online meeting with the Crow Force team from California.</p>
+            <p>9. Held and volunteered in the Altadad Art Exhibition.</p>
+            <p>10. Volunteered in the Noor Le Almakfofeen event and help their FTC team.</p>
+            <p>11. Held the north african women in STEM campaign.</p>
+            <p>12. Participated in the Ramadan nights event.</p>
+            <p>13. Particpated in helping arrange and manage the Libya Stem Championship contest.</p>
+            <p>14. Held Global Robotics Exchange Session with teams from all around the globe including all continents except antarctica.</p>
+            <p>15. Virtual meeting with FTC teams from all around the world.</p>
+            <p>16. Volunteered with YAAL for the second year in a row.</p>
+            <p>17. Helped The Seacoast International School with info session + workshop + and establishing their own FTC team.</p>
+            <p>18. Participated in the Robotics Championship held within the events of the international gerneral representative book fair and finished 3th.</p>
+            <p>19. Online meeting with the Starbust team from Hong Kong.</p>
+            <p>20. NASA Virtual Meeting.</p>
+        </div>
+    </section>
+    
+    <div class="slideshow-container">
+        <div class="slide active">
+            <img src="CSS/images/adv1.jpg" alt="Achievement 1">
+        </div>
+        <div class="slide">
+            <img src="CSS/images/adv2.jpg" alt="Achievement 2">
+        </div>
+        <div class="slide">
+            <img src="CSS/images/adv3.jpg" alt="Achievement 3">
+        </div>
+        <div class="slide">
+            <img src="CSS/images/adv4.jpg" alt="Achievement 3">
+        </div>
+        <div class="slide">
+            <img src="CSS/images/embassy 1.jpg" alt="Achievement 3">
+        </div>
+        <div class="slide">
+            <img src="CSS/images/embassy 2.jpg" alt="Achievement 3">
+        </div>
+        <div class="slide">
+            <img src="CSS/images/adv5.jpg" alt="Achievement 3">
+        </div>
+        <div class="slide">
+            <img src="CSS/images/adv6.jpg" alt="Achievement 3">
+        </div>
+        <div class="slide">
+            <img src="CSS/images/adv7.jpg" alt="Achievement 3">
+        </div>
+        <div class="slide">
+            <img src="CSS/images/adv8.jpg" alt="Achievement 3">
+        </div>
+        <div class="slide">
+            <img src="CSS/images/adv9.jpg" alt="Achievement 3">
+        </div>
+        <div class="slide">
+            <img src="CSS/images/adv10.jpg" alt="Achievement 3">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === index) ? 'block' : 'none';
+            });
+        }
+        
+        function prevSlide() {
+            currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
+            showSlide(currentSlide);
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
+            showSlide(currentSlide);
+        }
+        
+        showSlide(currentSlide);
+    </script>
+<footer>
+    <p>&copy; 2025 Hydra Lybotics Team. All rights reserved.</p>
+    <div class="footer-logos">
+        <img src="CSS/images/Hive Space Logo I-1.png" alt="Logo 1">
+        <img src="CSS/images/cubic-1.png" alt="Logo 2">
+        <img src="CSS/images/aipay.jpg" alt="Logo 3">
+    </div>
+</footer>
+</body>
+</html>
